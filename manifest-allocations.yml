@@ -2,7 +2,7 @@ applications:
 - name: tracker-allocations
   path: ./applications/allocations-server/build/libs/allocations-server.jar
   routes:
-  - route: allocations-pal-toasiva
+  - route: allocations-pal-toasiva.${DOMAIN}
   memory: 1G
   instances: 1
   env:
