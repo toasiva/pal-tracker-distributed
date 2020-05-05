@@ -6,7 +6,6 @@ applications:
   memory: 1G
   instances: 1
   env:
-    BACKLOG_SERVER_ENDPOINT: http://${route}
     JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
   services:
   - tracker-backlog-database
