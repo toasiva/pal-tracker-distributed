@@ -2,6 +2,8 @@ repositories {
     mavenCentral()
 }
 
+apply plugin: 'java'
+
 dependencies {
     compile "org.flywaydb:flyway-gradle-plugin:5.2.1"
 }
