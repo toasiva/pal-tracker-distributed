@@ -5,7 +5,8 @@ applications:
       - route: backlog-pal-toasiva.cfapps.io
     memory: 1G
     instances: 1
-    env:
+    env
+      REGISTRATION_SERVER_ENDPOINT: https://registration-pal-toasiva.cfapps.io/
       JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
     services:
       - tracker-backlog-database
