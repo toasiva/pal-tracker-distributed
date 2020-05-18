@@ -19,3 +19,10 @@ CREATE DATABASE tracker_allocations_test;
 CREATE DATABASE tracker_backlog_test;
 CREATE DATABASE tracker_registration_test;
 CREATE DATABASE tracker_timesheets_test;
+
+TRUNC tracker_allocations_dev.allocations;
+TRUNC tracker_backlog_dev.stories;
+TRUNC tracker_registration_dev.users;
+TRUNC tracker_registration_dev.accounts;
+TRUNC tracker_registration_dev.projects;
+TRUNC tracker_timesheets_dev.time_entries;
