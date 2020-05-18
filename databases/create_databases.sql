@@ -20,9 +20,9 @@ CREATE DATABASE tracker_backlog_test;
 CREATE DATABASE tracker_registration_test;
 CREATE DATABASE tracker_timesheets_test;
 
-TRUNCATE table tracker_allocations_dev.allocations;
-TRUNCATE table tracker_backlog_dev.stories;
-TRUNCATE table tracker_registration_dev.users;
-TRUNCATE table tracker_registration_dev.accounts;
-TRUNCATE table tracker_registration_dev.projects;
-TRUNCATE table tracker_timesheets_dev.time_entries;
+TRUNCATE table tracker_allocations.allocations;
+TRUNCATE table tracker_backlog.stories;
+TRUNCATE table tracker_registration.users;
+TRUNCATE table tracker_registration.accounts;
+TRUNCATE table tracker_registration.projects;
+TRUNCATE table tracker_timesheets.time_entries;
