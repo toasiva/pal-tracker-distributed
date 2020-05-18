@@ -19,10 +19,3 @@ CREATE DATABASE tracker_allocations_test;
 CREATE DATABASE tracker_backlog_test;
 CREATE DATABASE tracker_registration_test;
 CREATE DATABASE tracker_timesheets_test;
-
-TRUNCATE TABLE allocations;
-TRUNCATE TABLE stories;
-TRUNCATE TABLE users;
-TRUNCATE TABLE accounts;
-TRUNCATE TABLE projects;
-TRUNCATE TABLE time_entries;
