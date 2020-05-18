@@ -179,12 +179,12 @@ jobs:
           cf auth
           cf target -o "$CF_ORG" -s "$CF_SPACE"
           ./gradlew cfMigrate
-      - name: Truncate test database
-        run: |
-          mysql -uroot -proot < databases/truncate_databases.sql
         env:
           CF_API_URL: ${{ secrets.CF_API_URL }}
           CF_ORG: ${{ secrets.CF_ORG }}
           CF_SPACE: ${{ secrets.CF_SPACE }}
           CF_USERNAME: ${{ secrets.CF_USERNAME }}
           CF_PASSWORD: ${{ secrets.CF_PASSWORD }}
+      - name: Truncate test database
+        run: |
+          mysql -uroot -proot < databases/truncate_databases.sql
