@@ -185,6 +185,10 @@ jobs:
           CF_SPACE: ${{ secrets.CF_SPACE }}
           CF_USERNAME: ${{ secrets.CF_USERNAME }}
           CF_PASSWORD: ${{ secrets.CF_PASSWORD }}
+      - name: Startup test database instance
+        run: sudo service mysql start
+      - name: Make Gradle Executable
+        run: chmod +x ./gradlew
       - name: Truncate test database
         run: |
           mysql -uroot -proot < databases/truncate_databases.sql
